@@ -1,0 +1,11 @@
+Chord Node/ Worker Node
+1. Join [nodeName] 	// joins a node with the specified name.
+2. leave 		//Terminates node and moves data to appropriate node in ring.
+3. get [keyString] 	//Gets data from DHT with the specified keyString
+4. put [keyString] 	//Puts mock data at keyString. In the form keyString[DATA]
+
+Management Server
+1. connect [nodeName] 	//Connects to a Chord Node with the specified name.
+2. test 		//Runs a test of submitting 3 Tasks with different TaskType's
+3. empty 		//Empties the servers internal file store.
+4. list 		//Lists the internal file store in the console.

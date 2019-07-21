@@ -1,0 +1,38 @@
+<!-- used to notify the browser of successful form submission -->
+
+<HTML>
+
+<head>
+<style>
+span {
+    width:110px;
+    clear:left;
+    text-align:right;
+    padding-right:10px;
+	padding-bottom: 10px;
+}
+
+input,select, span {
+    float:left;
+}
+</style>
+</head>
+
+
+<BODY>
+
+<FORM action="/myapp/rest/files/putTask" method="POST" enctype="multipart/form-data">
+<span>File Name:</span> <input type = "text" name = "name"></input> 
+<span>File Location:</span> <input type = "file" name = "content"></input> 
+<span>Work Type:</span> <select name = "workType">
+  <option value="Word Metrics">Word Metrics</option>
+  <option value="Encrypt">Encrypt</option>
+  <option value="Hash">Hash</option>
+  <option value="N/A">N/A</option>
+</select>
+<span>Submit: </span>
+<input type = "submit" name = "submit"></input>
+</FORM>
+</BODY>
+
+</HTML>
